@@ -27,9 +27,11 @@ public class TaskThreeCycle {
 
         // Задание 3
         int cometYear = 79;  // периодичность пролета кометы
-        int numStartYear = 1822;  // начальный год отсчета
-        int numNowYear = 2022;
-        int numFinish = 2122;
+        int numStartYear = 1896;  // последний раз комета пролетала по условиям задачи
+        int numNowYear = numStartYear - cometYear + 200; // cейчас такой год
+        int numFinish = numNowYear +100;
+        // System.out.println("начало отсчета"+numNowYear);  проверка правильности года по заданию
+        //System.out.println("конец отсчета "+numFinish);
         int n;    // последний раз комета была рядом до 2022 года
         for (i = numStartYear; i <= numNowYear; i = i + cometYear) {
             numStartYear = i;
